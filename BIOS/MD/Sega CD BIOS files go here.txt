@@ -1,0 +1,3 @@
+bios_CD_E.bin - MD5: e66fa1dc5820d254611fdcdba0662372
+bios_CD_U.bin - MD5: 2efd74e3232ff260e371b99f84024f7f
+bios_CD_J.bin - MD5: 278a9397d192149e84e820ac621a8edd
