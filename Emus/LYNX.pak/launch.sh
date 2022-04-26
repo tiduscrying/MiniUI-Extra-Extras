@@ -1,6 +1,7 @@
 #!/bin/sh
 
 EMU_EXE=handy
+CORES_PATH=$(dirname "$0")
 
 ###############################
 

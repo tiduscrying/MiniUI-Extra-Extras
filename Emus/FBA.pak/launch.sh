@@ -1,6 +1,7 @@
 #!/bin/sh
 
 EMU_EXE=fbalpha
+CORES_PATH=$(dirname "$0")
 
 ###############################
 

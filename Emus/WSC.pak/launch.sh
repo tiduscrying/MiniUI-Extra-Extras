@@ -1,6 +1,7 @@
 #!/bin/sh
 
 EMU_EXE=mednafen_wswan
+CORES_PATH=$(dirname "$0")
 
 ###############################
 

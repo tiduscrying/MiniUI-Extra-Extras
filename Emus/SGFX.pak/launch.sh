@@ -1,6 +1,7 @@
 #!/bin/sh
 
 EMU_EXE=mednafen_supergrafx
+CORES_PATH=$(dirname "$0")
 
 ###############################
 

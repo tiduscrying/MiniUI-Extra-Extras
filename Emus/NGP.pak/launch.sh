@@ -1,6 +1,7 @@
 #!/bin/sh
 
 EMU_EXE=mednafen_ngp
+CORES_PATH=$(dirname "$0")
 
 ###############################
 
