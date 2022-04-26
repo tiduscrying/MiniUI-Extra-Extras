@@ -1,5 +1,5 @@
 # MiniUI-Extras
-<img src="screenshot_000.png" width=280 /> <img src="screenshot_001.png" width=280 /> <img src="screenshot_002.png" width=280 /> 
+<img src="screenshot_000.png" width=260 /> <img src="screenshot_001.png" width=260 /> <img src="screenshot_002.png" width=260 /> 
 ### _Extra Retroarch cores for MiniUI on the Miyoo Mini_ ###
 Utilizing the very convenient modular structure of [MiniUI](https://github.com/shauninman/MiniUI), we can add a lot of RetroArch cores that already work in [Onion](https://github.com/jimgraygit/Onion)!
 This initial batch is really only the cores I made for myself based on the systems I wanted to play. Additional cores may be provided upon request (or PR). 
