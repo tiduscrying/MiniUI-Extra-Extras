@@ -1,7 +1,7 @@
 # MiniUI-Extras
-<img src="screenshot_000.png" width=320 /> <img src="screenshot_001.png" width=320 /> <img src="screenshot_002.png" width=320 /> 
+<img src="screenshot_000.png" width=300 /> <img src="screenshot_001.png" width=300 /> <img src="screenshot_002.png" width=300 /> 
 ### _Extra Retroarch cores for MiniUI on the Miyoo Mini_ ###
-Utilizing the very convenient modularity of MiniUI's structure, we can add a lot of RetroArch cores that already work in Onion!
+Utilizing the very convenient modular structure of [MiniUI](https://github.com/shauninman/MiniUI), we can add a lot of RetroArch cores that already work in [Onion](https://github.com/jimgraygit/Onion)!
 This initial batch is really only the cores I made for myself based on the systems I wanted to play. Additional cores may be provided upon request (or PR). 
 
 Cores are provided AS-IS as I am not the one who compiled them and I will likely not be making any changes to cores in order to get things working. DO REMEMBER to not pester shauninman, the creator of MiniUI, about any of these cores as they are provided unofficially. 
@@ -39,6 +39,6 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 
 ## Special Thanks
-- To Shauninman, creator of MinUI
-- eggs, jimgraygit and everyone else that works on Onion
+- To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
+- eggs, [jimgraygit](https://github.com/jimgraygit) and everyone else that works on [Onion](https://github.com/jimgraygit/Onion)
 - The Retro Game Handhelds Discord and it's users
