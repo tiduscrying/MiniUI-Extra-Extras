@@ -33,7 +33,16 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 ### Doom
 - The PRBoom core is compatible with "Boom" and "Vanilla" compatible mods. Mods work by ~~abusing~~ utilizing how MiniUI handles folders and multi-disc games. This is acheived by creating a folder for each mod in your ROM folder and including both the parent WAD and mod WAD.
   - **You WILL need to enable the feature "Look on parent folders for IWAD" in the Picoarch advanced settings for mods to work properly!**
-  - Example: `SD:\Roms\DOOM (DOOM)\Chex Quest\` has both `chex.wad` and `doom2.wad` inside, with a `Chex Quest.m3u` file as well with the contents `chex.wad`.
+  - Mod folder structure example:
+  ```
+  └── Roms/Doom/
+     └── Chex Quest/
+	     ├── chex.wad
+	     ├── chex.deh
+	     ├── doom2.wad
+	     └── Chex Quest.m3u
+		     └── Contains only one line with the name of the Mod WAD - chex.wad
+  ```    
   - This also cleans up the ROM list considerably
   - You can still launch normal WADs without making folders or `.m3u` files
   - Confirmed working mods: Chex Quest, Back To Saturn X - Episode 1, Batman Doom, Doom 64 for Doom II, Doom the Way Id Did, Jenesis, SCYTHE.
