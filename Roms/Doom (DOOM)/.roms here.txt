@@ -1,0 +1,8 @@
+Mod Structure Example: 
+└── Roms/Doom (DOOM)/
+	└── Chex Quest/
+		├── chex.wad
+		├── chex.deh
+		├── doom2.wad
+		└── Chex Quest.m3u
+			└── Contains only one line with the name of the Mod WAD - chex.wad
