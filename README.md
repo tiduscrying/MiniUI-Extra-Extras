@@ -31,10 +31,15 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - You can create additional ROM folders to separate some Arcade systems. For example, you could make a folder titled "NeoGeo (FBA)" and put all of your NeoGeo ROMs there to have a dedicated entry. DO NOTE that this method will make all folders that share the "FBA" core share settings.
 - Adding the NeoGeo unibios to your `neogeo.zip` is _highly_ reocommended as it adds the ability to switch between AES/MVS modes and region on boot and adds cheats for some games (accessible by pressing SELECT + R1 by default). 
 ### Doom
-- The Doom core is compatible with PRBoom compatible mods. Loading multiple files may be possible in the future, I just haven't figured out _how_ just yet.
-  - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
-- Mods that I have confirmed working: SCYTHE, BTSX_E1, FreeDoom (Episode 1)
+- The PRBoom core is compatible with "Boom" and "Vanilla" compatible mods. Mods work by ~~abusing~~ utilizing how MiniUI handles folders and multi-disc games. This is acheived by creating a folder for each mod in your ROM folder and including both the parent WAD and mod WAD.
+  - **You WILL need to enable the feature "Look on parent folders for IWAD" in the Picoarch advanced settings for mods to work properly!**
+  - Example: `SD:\Roms\DOOM (DOOM)\Chex Quest\` has both `chex.wad` and `doom2.wad` inside, with a `Chex Quest.m3u` file as well with the contents `chex.wad`.
+  - This also cleans up the ROM list considerably
+  - You can still launch normal WADs without making folders or `.m3u` files
+  - Confirmed working mods: Chex Quest, Back To Saturn X - Episode 1, Batman Doom, Doom 64 for Doom II, Doom the Way Id Did, Jenesis, SCYTHE.
 - Rumble works and (I think) is enabled by default
+- DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
+- Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
 ### WonderSwan & NeoGeo Pocket Color
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 
