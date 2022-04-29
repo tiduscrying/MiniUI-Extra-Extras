@@ -20,7 +20,9 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | Atari Lynx | `LYNX.pak` | `handy_libretro.so` | \Roms\Atari Lynx (LYNX) | `.zip`,`.lnx` | `lynxboot.img` |
 | NeoGeo Pocket/Pocket Color | `NGP.pak` | `mednafen_ngp_libretro.so` | \Roms\NeoGeo Pocket Color (NGP) | `.zip`,`.ngp`,`.ngc` | No |
 | NEC SuperGrafx | `SGFX.pak` | `mednafen_supergrafx_libretro.so` | \Roms\SuperGrafx (SGFX) | `.pce`,`.zip` | No |
-| Bandai WonderSwan/WonderSwan Color | `WSC.pak` | `mednafen_wswan_libretro.so` | \Roms\WonderSwan Color (WSC) | `.ws`,`.wsc`,`.zip` | No
+| Bandai WonderSwan/WonderSwan Color | `WSC.pak` | `mednafen_wswan_libretro.so` | \Roms\WonderSwan Color (WSC) | `.ws`,`.wsc`,`.zip` | No |
+| GameBoy Advance (MGBA) | `MGBA.pak` | `mgba_libretro.pak` | \Roms\GameBoy Advance (MGBA) | `.gba`,`.gb`,`.gbc`,`.zip` | `gba_bios.bin`
+| Sega SMS/GG/MD (Genesis Plus GX) | `SMS.pak` | `genesis_plus_gx_libretro.so` | \Roms\Sega Master System (SMS) | `.sms`,`.md`,`.zip` | No |
 
 ## Notes
 ### General
@@ -46,11 +48,17 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
   - This also cleans up the ROM list considerably
   - You can still launch normal WADs without making folders or `.m3u` files
   - Confirmed working mods: Chex Quest, Back To Saturn X - Episode 1, Batman Doom, Doom 64 for Doom II, Doom the Way Id Did, Jenesis, SCYTHE.
+  - Included with the next version (as of 04-28-22) will be the files for FreeDoom Phase 1 & 2 and Chex Quest. Enjoy!
 - Rumble works and (I think) is enabled by default
 - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
 - Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
-### WonderSwan & NeoGeo Pocket Color
+### WonderSwanm, NeoGeo Pocket Color and Sega Master System
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
+### MGBA
+- MGBA is provided as an alternative core for any of the GameBoy handhelds. GameBoy Advance benefits the most from it's featureset, which includes rumble for specific games such as "Drill Dozer". Some GB/GBC games that have SuperGameBoy colors and borders can also be loaded.
+- Performance with MGBA is not _as_ good as GPSP and Gambatte (the two cores already included with MiniUI). Not much is going to be done to look into this.
+### Genesis Plus GX
+- In a similar vein to MGBA, Genesis Plus GX is being provided as an alternate core for some of the systems already included with MiniUI. By default, it is configured to load Sega Master System titles, but the emulator PAK name can be changed to fit the MegaDrive or any of the other variants of that system.
 
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
