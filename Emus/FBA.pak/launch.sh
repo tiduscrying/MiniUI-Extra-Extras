@@ -12,7 +12,7 @@ mkdir -p "$SAVES_PATH/$EMU_TAG"
 HOME="$USERDATA_PATH"
 cd "$HOME"
 
-if [ $(stat -c%s "$ROM") -gt 10000000 ] ; then
+if [ $(stat -c%s "$ROM") -gt 50000000 ] ; then
 	needs-swap
 	show okay.png
 	say "Large ROM detected!"$'\n'"Loading with swap-file. Please wait."
