@@ -52,7 +52,7 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - Rumble works and (I think) is enabled by default
 - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
 - Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
-### WonderSwanm, NeoGeo Pocket Color and Sega Master System
+### WonderSwan, NeoGeo Pocket Color and Sega Master System
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 ### MGBA
 - MGBA is provided as an alternative core for any of the GameBoy handhelds. GameBoy Advance benefits the most from it's featureset, which includes rumble for specific games such as "Drill Dozer". Some GB/GBC games that have SuperGameBoy colors and borders can also be loaded.
