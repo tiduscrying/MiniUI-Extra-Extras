@@ -57,6 +57,11 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 ### Genesis Plus GX
 - In a similar vein to MGBA, Genesis Plus GX is being provided as an alternate core for some of the systems already included with MiniUI. By default, it is configured to load Sega Master System titles, but the emulator PAK name can be changed to fit the MegaDrive or any of the other variants of that system.
+### Pico-8
+- Pico-8 games do NOT utilize any of the unique features of MiniUI (save states, in-game menu, remappable controls, etc.) as it is a standalone emulator and not part of Picoarch.
+- Exiting a game will NOT perform any sort of save state; neither will powering off the console.
+- To exit games, press the MENU button. Cycle through scaling options with SELECT and bring up Fake-08's menu with START. 
+- Confirmed working titles include Celeste Classic, Picohot, Pico Tetris and a few others. Compatibility with newer carts not guaranteed. 
 
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
