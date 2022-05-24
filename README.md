@@ -68,20 +68,16 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 ### Genesis Plus GX
 - Genesis Plus GX is being provided as an alternate core for some of the systems already included with MiniUI. By default, it is configured to load Sega Master System titles, but the emulator PAK name can be changed to fit the MegaDrive or any of the other variants of that system.
 ### Super Nintendo Entertainment System
-- This core is an alternative for the one included MiniUI.
+- This core is an alternative for the one included in MiniUI.
 - It performs great with SH-1 (Kirby's Dream Land 3) and SFX (Star Fox) games.
 ### Super Game Boy
 - The mGBA core can be used for playing Game Boy games in color, if they are supported by Super Game Boy hardware.
-- No discernable performance compared to Gambatte. 
+- No discernable performance drops compared to Gambatte. 
 ### Pico-8
 - Pico-8 games do NOT utilize any of the unique features of MiniUI (save states, in-game menu, remappable controls, etc.) as it is a standalone emulator and not part of Picoarch.
 - Exiting a game will NOT perform any sort of save state; neither will powering off the console.
 - To exit games, press the MENU button. Cycle through scaling options with SELECT and bring up Fake-08's menu with START. 
 - Confirmed working titles include Celeste Classic, Picohot, Pico Tetris and a few others. Compatibility with newer carts not guaranteed. 
-### QUAKE
-- Quake needs a config file (config.jpg) in /Saves/QUAKE/Quake in order to use control correctly.
-- Add the .pak and "maps" folder from inside the Quake folder to your ROM folder.
-- This core doesn't support save states and auto-resume after power-off.
 
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
