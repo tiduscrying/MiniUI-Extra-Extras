@@ -66,4 +66,5 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
 - eggs, [jimgraygit](https://github.com/jimgraygit) and everyone else that works on [Onion](https://github.com/jimgraygit/Onion)
+- Russ from [RetroGameCorps](https://www.youtube.com/c/RetroGameCorps) for shouting out the project and linking to it in his [Miyoo Mini Guide](https://retrogamecorps.com/2022/05/15/miyoo-mini-v2-guide/)
 - The Retro Game Handhelds Discord and it's users
