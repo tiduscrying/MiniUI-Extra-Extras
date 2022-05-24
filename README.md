@@ -23,6 +23,7 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | Bandai WonderSwan/WonderSwan Color | `WSC.pak` | `mednafen_wswan_libretro.so` | \Roms\WonderSwan Color (WSC) | `.ws`,`.wsc`,`.zip` | No |
 | GameBoy Advance (MGBA) | `MGBA.pak` | `mgba_libretro.pak` | \Roms\GameBoy Advance (MGBA) | `.gba`,`.gb`,`.gbc`,`.zip` | `gba_bios.bin`
 | Sega SMS/GG/MD (Genesis Plus GX) | `SMS.pak` | `genesis_plus_gx_libretro.so` | \Roms\Sega Master System (SMS) | `.sms`,`.md`,`.zip` | No |
+| PICO-8 | `P8.pak` | `fake08` | \Roms\PICO-8 (P8) | `.p8`, `.png` | No |
 
 ## Notes
 ### General
