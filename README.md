@@ -57,7 +57,7 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - Rumble works and (I think) is enabled by default
 - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
 - Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
-### QUAKE
+### Quake
 - Quake needs a config file (config.jpg) in /Saves/QUAKE/Quake in order to detect inputs correctly (included).
 - Add the .pak and "maps" folder from inside the Quake folder to your ROM folder.
 - This core doesn't support save states and auto-resume after power-off.
