@@ -14,9 +14,11 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 ## Included Cores (So far)
 | System | PAK name | Core | Default ROM Folder | ROM Extensions | Requires BIOS? |
 | ------ | -------- | ---- | ------------------ | -------------- |--------------- |
+| CPS1 | `CPS1.pak` | `fbalpha2012_cps1_libretro.so` | \Roms\Capcom Play System I (CPS1) | `.zip`,`.chd` | No |
 | CPS2 | `CPS2.pak` | `fbalpha2012_cps2_libretro.so` | \Roms\Capcom Play System II (CPS2) | `.zip`,`.chd` | No |
 | CPS3 | `CPS3.pak` | `fbalpha2012_cps3_libretro.so` | \Roms\Capcom Play System III (CPS3) | `.zip`,`.chd` | No |
 | Doom | `DOOM.pak` | `prboom_libretro.so` | \Roms\Doom (DOOM) | `.wad` | `prboom.wad` |
+| Quake | `QUAKE.pak` | `tyrquake_libretro.so` | \Roms\Quake (QUAKE) | `.pak` | No |
 | Final Burn Alpha (2012) | `FBA.pak`  | `fbalpha2012_libretro.so` | \Roms\Final Burn Alpha (FBA) | `.zip`,`.chd` | `neogeo.zip` |
 | Atari Lynx | `LYNX.pak` | `handy_libretro.so` | \Roms\Atari Lynx (LYNX) | `.zip`,`.lnx` | `lynxboot.img` |
 | NeoGeo Pocket/Pocket Color | `NGP.pak` | `mednafen_ngp_libretro.so` | \Roms\NeoGeo Pocket Color (NGP) | `.zip`,`.ngp`,`.ngc` | No |
@@ -24,6 +26,8 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | Bandai WonderSwan/WonderSwan Color | `WSC.pak` | `mednafen_wswan_libretro.so` | \Roms\WonderSwan Color (WSC) | `.ws`,`.wsc`,`.zip` | No |
 | Sega SMS/GG/MD (Genesis Plus GX) | `SMS.pak` | `genesis_plus_gx_libretro.so` | \Roms\Sega Master System (SMS) | `.sms`,`.md`,`.zip` | No |
 | PICO-8 | `P8.pak` | `fake08` | \Roms\PICO-8 (P8) | `.p8`, `.png` | No |
+| Super Game Boy | `SGB.pak` | `mgba_libretro.so` | \Roms\Super Game Boy (SGB) | `.zip`,`.gb` | `sgb_bios.bin` |
+| Super Nintendo Entertainment System | `SUFA.pak` | `mednafen_supafaust_libretro.so` | \Roms\Super Nintendo Entertainment System (SUFA) | `.zip`,`.sfc` | No |
 
 ## Notes
 ### General
@@ -42,7 +46,7 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
      └── Chex Quest/
 	     ├── chex.wad
 	     ├── chex.deh
-	     ├── doom2.wad
+	     ├── doom.wad or freedom.wad
 	     └── Chex Quest.m3u
 		     └── Contains only one line with the name of the Mod WAD - chex.wad
   ```    
@@ -53,10 +57,22 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - Rumble works and (I think) is enabled by default
 - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
 - Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
+### Quake
+- Quake needs a config file (config.jpg) in /Saves/QUAKE/Quake in order to detect inputs correctly (included).
+- Add the .pak and "maps" folder from inside the Quake folder to your ROM folder.
+- This core doesn't support save states and auto-resume after power-off.
+- DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
+- Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
 ### WonderSwan, NeoGeo Pocket Color and Sega Master System
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 ### Genesis Plus GX
-- In a similar vein to MGBA, Genesis Plus GX is being provided as an alternate core for some of the systems already included with MiniUI. By default, it is configured to load Sega Master System titles, but the emulator PAK name can be changed to fit the MegaDrive or any of the other variants of that system.
+- Genesis Plus GX is being provided as an alternate core for some of the systems already included with MiniUI. By default, it is configured to load Sega Master System titles, but the emulator PAK name can be changed to fit the MegaDrive or any of the other variants of that system.
+### Super Nintendo Entertainment System
+- This core is an alternative for the one included in MiniUI.
+- It performs great with SH-1 (Kirby's Dream Land 3) and SFX (Star Fox) games.
+### Super Game Boy
+- The mGBA core can be used for playing Game Boy games in color, if they are supported by Super Game Boy hardware.
+- No discernable performance drops compared to Gambatte. 
 ### Pico-8
 - Pico-8 games do NOT utilize any of the unique features of MiniUI (save states, in-game menu, remappable controls, etc.) as it is a standalone emulator and not part of Picoarch.
 - Exiting a game will NOT perform any sort of save state; neither will powering off the console.
