@@ -27,7 +27,6 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | Sega SMS/GG/MD (Genesis Plus GX) | `SMS.pak` | `genesis_plus_gx_libretro.so` | \Roms\Sega Master System (SMS) | `.sms`,`.md`,`.zip` | No |
 | PICO-8 | `P8.pak` | `fake08` | \Roms\PICO-8 (P8) | `.p8`, `.png` | No |
 | Super Game Boy | `SGB.pak` | `mgba_libretro.so` | \Roms\Super Game Boy (SGB) | `.zip`,`.gb` | `sgb_bios.bin` |
-| Super Nintendo Entertainment System | `SUFA.pak` | `mednafen_supafaust_libretro.so` | \Roms\Super Nintendo Entertainment System (SUFA) | `.zip`,`.sfc` | No |
 
 ## Notes
 ### General
