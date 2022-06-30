@@ -28,6 +28,13 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | PICO-8 | `P8.pak` | `fake08` | \Roms\PICO-8 (P8) | `.p8`, `.png` | No |
 | Super Game Boy | `SGB.pak` | `mgba_libretro.so` | \Roms\Super Game Boy (SGB) | `.zip`,`.gb` | `sgb_bios.bin` |
 
+## Incompatible Cores
+| System | Core | Issue | MD5 |
+| ------ | ---- | ----- | --- |
+| Atari 2600 | Stella | XRGB8888 color not supported by Picoarch | |
+| MegaDuck | sameduck | XRGB8888 color not supported by Picoarch | |
+| Arcade | Final Burn Neo | malloc/memory related segmentation fault | |
+
 ## Notes
 ### General
 - If colors are distorted when first launching a ROM, try changing the display filter or scaling.
