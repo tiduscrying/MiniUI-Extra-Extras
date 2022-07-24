@@ -33,7 +33,9 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 | ------ | ---- | ----- | --- |
 | Atari 2600 | Stella | XRGB8888 color not supported by Picoarch | |
 | MegaDuck | sameduck | XRGB8888 color not supported by Picoarch | |
-| Arcade | Final Burn Neo | malloc/memory related segmentation fault | |
+| Arcade | Final Burn Neo | malloc/memory related segmentation fault, even with swap enabled | |
+| DOS | DosBox-Pure | malloc/memory related segmentation fault, even with swap enabled | |
+| EasyRPG | easyrpg | XRGB8888 color not supported by Picoarch | |
 
 ## Notes
 ### General
@@ -54,7 +56,7 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 	     ├── chex.deh
 	     ├── doom.wad or freedom.wad
 	     └── Chex Quest.m3u
-		     └── Contains only one line with the name of the Mod WAD - chex.wad
+                └── Contains only one line with the name of the Mod WAD - chex.wad
   ```    
   - This also cleans up the ROM list considerably
   - You can still launch normal WADs without making folders or `.m3u` files
@@ -64,11 +66,34 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
 - Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
 ### Quake
-- Quake needs a config file (config.jpg) in /Saves/QUAKE/Quake in order to detect inputs correctly (included).
-- Add the .pak and "maps" folder from inside the Quake folder to your ROM folder.
+- Quake needs a config file (config.cfg) in each game's save directory in order to detect inputs correctly (included).
+  - Examples: `/Saves/QUAKE/quake/config.cfg`, `/Saves/QUAKE/dopa/config.cfg`
+- Mods can be loaded in two ways:
+  - First is to have everything ugly and dumped into the Roms folder for Quake. All of your games would be in their original folders and launched as `.pak` files from MiniUI. Example:
+  ```
+     └── Roms/Quake (QUAKE)/
+        └── id1/
+           ├── music/
+           ├── pak0.pak
+           └── pak1.pak
+        └── dopa/
+           └── pak0.pak	     
+  ```   
+  - Second is to have things prettied up a bit, but at the cost of having to duplicate the base `id1` folder and files for every single mod.
+  ```
+     └── Roms/Quake (QUAKE)/
+         └── Dimensions of the Past/
+            └── id1/
+               ├── music/
+               ├── pak0.pak
+               └── pak1.pak  
+            └── dopa/
+               └── pak1.pak
+            └── Dimensions of the Past.m3u (contains a single line saying "dopa/pak0.pak") 
+  ```
 - This core doesn't support save states and auto-resume after power-off.
-- DO NOT hit "Quit" from within the Doom main menu! This will crash Picoarch and you will have to force restart your system by holding MENU and POWER!
-- Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may drop for more intensive mods. 
+- Exiting the game from Quake's internal main menu will do nothing. Exit back to MiniUI as you would with any other ROM.
+- Changing the internal resolution to 640x400 is possible in Picoarch's advanced menu, but performance may vary. 
 ### WonderSwan, NeoGeo Pocket Color and Sega Master System
 - If you want separate folders for each system version, you can create them under ROMs; just be sure to include the same TAG that is in parenthesis. Example: "NeoGeo Pocket (NGP)"
 ### Genesis Plus GX
@@ -77,13 +102,16 @@ Cores are provided AS-IS as I am not the one who compiled them and I will likely
 - This core is an alternative for the one included in MiniUI.
 - It performs great with SH-1 (Kirby's Dream Land 3) and SFX (Star Fox) games.
 ### Super Game Boy
-- The mGBA core can be used for playing Game Boy games in color, if they are supported by Super Game Boy hardware.
+- The mGBA core can be used for playing Game Boy and GameBoy Color games  if they are supported by Super Game Boy hardware. This provides colorization and special borders.
+  - Do note that this will cause the game to render at it's original resolution due to also rendering the additional frame.
+- `sgb_bios.bin` absolutely required for frames and colorization! Otherwise, the games will just launch as normal GB/GBC titles. 
 - No discernable performance drops compared to Gambatte. 
 ### Pico-8
 - Pico-8 games do NOT utilize any of the unique features of MiniUI (save states, in-game menu, remappable controls, etc.) as it is a standalone emulator and not part of Picoarch.
 - Exiting a game will NOT perform any sort of save state; neither will powering off the console.
 - To exit games, press the MENU button. Cycle through scaling options with SELECT and bring up Fake-08's menu with START. 
-- Confirmed working titles include Celeste Classic, Picohot, Pico Tetris and a few others. Compatibility with newer carts not guaranteed. 
+- Confirmed working titles include Celeste Classic, Picohot, Pico Tetris and a few others. Compatibility with newer carts not guaranteed.
+- The `fake08` binary used for Pico-8 is an older version compiled against MiniUI's custom SDL. This is what allows sound and audio to function as intended, but also means feature parity with upstream Pico-8 is not 1:1. 
 
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
