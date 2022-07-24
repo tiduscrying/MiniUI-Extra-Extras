@@ -21,6 +21,7 @@ The initial batch was really only the cores I made for myself based on the syste
 | Quake | `QUAKE.pak` | `tyrquake_libretro.so` | \Roms\Quake (QUAKE) | `.pak` | No |
 | Final Burn Alpha (2012) | `FBA.pak`  | `fbalpha2012_libretro.so` | \Roms\Final Burn Alpha (FBA) | `.zip`,`.chd` | `neogeo.zip` |
 | Atari Lynx | `LYNX.pak` | `handy_libretro.so` | \Roms\Atari Lynx (LYNX) | `.zip`,`.lnx` | `lynxboot.img` |
+| Atari 7800 | `7800.pak` | `prosystem_libretro.so` | \Roms\Atari 7800 (7800) | `.zip`, `.a78`, `.bin` | No
 | NeoGeo Pocket/Pocket Color | `NGP.pak` | `mednafen_ngp_libretro.so` | \Roms\NeoGeo Pocket Color (NGP) | `.zip`,`.ngp`,`.ngc` | No |
 | NEC SuperGrafx | `SGFX.pak` | `mednafen_supergrafx_libretro.so` | \Roms\SuperGrafx (SGFX) | `.pce`,`.zip` | No |
 | Bandai WonderSwan/WonderSwan Color | `WSC.pak` | `mednafen_wswan_libretro.so` | \Roms\WonderSwan Color (WSC) | `.ws`,`.wsc`,`.zip` | No |
