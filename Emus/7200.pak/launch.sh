@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EMU_EXE=fbalpha2012_cps3
+EMU_EXE=prosystem
 CORES_PATH=$(dirname "$0")
 
 ###############################
@@ -11,10 +11,4 @@ mkdir -p "$BIOS_PATH/$EMU_TAG"
 mkdir -p "$SAVES_PATH/$EMU_TAG"
 HOME="$USERDATA_PATH"
 cd "$HOME"
-if [ $(stat -c%s "$ROM") -gt 50000000 ] ; then
-	needs-swap
-	show okay.png
-	say "Large ROM detected!"$'\n'"Loading with swap-file. Please wait."
-	confirm only
-fi
 picoarch "$CORES_PATH/${EMU_EXE}_libretro.so" "$ROM" &> "$LOGS_PATH/$EMU_TAG.txt"

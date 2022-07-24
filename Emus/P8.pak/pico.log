@@ -1,0 +1,21 @@
+Initializing global api
+initialized Vm and host
+Setting cart list on vm
+Loading Bios cart
+Loading cart /mnt/SDCARD/Roms/Pico-8 (P8)/picotetris-5.p8.png
+resetting state
+Calling Cart Constructor
+getting file contents
+Version: 18 Compression 1got valid png cart
+Bios Cart Loaded
+Starting main loop
+deleting cart
+closing lua state
+resetting state
+getting file contents
+Got file contents... parsing cart
+Setting cart graphics rom data from strings
+Copying data to spritesheet
+Copying data to sprite flags
+Copying data to map data
+Setting cart audio rom data from strings
