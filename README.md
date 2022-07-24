@@ -2,9 +2,9 @@
 <img src="screenshot_003.png" width=260 /> <img src="screenshot_006.png" width=260 /> <img src="screenshot_001.png" width=260 /> 
 ### _Extra Retroarch cores for MiniUI on the Miyoo Mini_ ###
 Utilizing the very convenient modular structure of [MiniUI](https://github.com/shauninman/MiniUI), we can add a lot of RetroArch cores that already work in [Onion](https://github.com/jimgraygit/Onion)!
-This initial batch is really only the cores I made for myself based on the systems I wanted to play. Additional cores may be provided upon request (or PR). 
+The initial batch was really only the cores I made for myself based on the systems I wanted to play. Additional cores have been provided upon request (or PR), so long as they are currently functioning within MiniUI/Picoarch! 
 
-Cores are provided AS-IS as I am not the one who compiled them and I will likely not be making any changes to cores in order to get things working. DO REMEMBER to not pester shauninman, the creator of MiniUI, about any of these cores as they are provided unofficially. 
+**Cores are provided AS-IS as I am not the one who compiled them and I will likely not be making any changes to cores in order to get things working. DO REMEMBER to not pester shauninman, the creator of MiniUI, about any of these cores as they are provided unofficially.**
 
 ## Installation
 - Download the latest release and extract the contents of the zip file to the root of your MiniUI SD card
