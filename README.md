@@ -1,7 +1,7 @@
 # MiniUI Extra Extras
 <img src="screenshot_003.png" width=260 /> <img src="screenshot_006.png" width=260 /> <img src="screenshot_001.png" width=260 /> 
 ### _Extra Retroarch cores for MiniUI on the Miyoo Mini_ ###
-Utilizing the very convenient modular structure of [MiniUI](https://github.com/shauninman/MiniUI), we can add a lot of RetroArch cores that already work in [Onion](https://github.com/jimgraygit/Onion)!
+Utilizing the very convenient modular structure of [MiniUI](https://github.com/shauninman/MiniUI), we can add a lot of RetroArch cores that already work in [Onion](https://github.com/OnionUI/Onion)!
 The initial batch was really only the cores I made for myself based on the systems I wanted to play. Additional cores have been provided upon request (or PR), so long as they are currently functioning within MiniUI/Picoarch! 
 
 **Cores are provided AS-IS as I am not the one who compiled them and I will likely not be making any changes to cores in order to get things working. DO REMEMBER to not pester shauninman, the creator of MiniUI, about any of these cores as they are provided unofficially.**
@@ -116,6 +116,6 @@ The initial batch was really only the cores I made for myself based on the syste
 
 ## Special Thanks
 - To [Shauninman](https://github.com/shauninman), creator of [MiniUI](https://github.com/shauninman/MiniUI)
-- eggs, [jimgraygit](https://github.com/jimgraygit) and everyone else that works on [Onion](https://github.com/jimgraygit/Onion)
+- eggs, [jimgraygit](https://github.com/jimgraygit) and everyone else that works on [Onion](https://github.com/OnionUI/Onion)
 - Russ from [RetroGameCorps](https://www.youtube.com/c/RetroGameCorps) for shouting out the project and linking to it in his [Miyoo Mini Guide](https://retrogamecorps.com/2022/05/15/miyoo-mini-v2-guide/)
 - The Retro Game Handhelds Discord and it's users
